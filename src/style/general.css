@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+* {
+  font-family: 'Itim', cursive;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+.title_fz14 {
+  font-size: 14px;
+}
+.title_fz16 {
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+}
+.title_fz20 {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+}
+.title_fz48 {
+  color: rgb(0, 0, 0);
+  font-size: 48px;
+}
+.sidepanel {
+  position: fixed;
+  top: 30%;
+  left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 340px;
+  z-index: 3;
+  align-items: center;
+}
+
+.sidepanel_divider {
+  width: 2px;
+  height: 70px;
+  background-color: #000000;
+}
+.sidepanel_text {
+  height: 120px;
+  width: 25px;
+}
+.sidepanel_text span {
+  transform: rotate(-90deg) translate(-35%, -210%);
+  display: block;
+  width: 120px;
+}
+.social_media {
+  width: 20px;
+  height: 20px;
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+}
+.social_media:hover {
+  filter: invert(100%);
+  -webkit-filter: invert(60%);
+}
+.promo_subtitle {
+  padding-left: 10px;
+  position: relative;
+  z-index: 2;
+}
+.circle::before {
+  position: absolute;
+  content: '';
+  width: 36px;
+  height: 36px;
+  background-color: #ffffff;
+  border-radius: 100%;
+  z-index: -1;
+  top: -35%;
+  left: 0;
+}
+.promo {
+  min-height: 100vh;
+  position: relative;
+  background: url('../img/background/promoback.png') no-repeat 50% / cover;
+  padding-top: 205px;
+}
+.promo_title {
+  width: 535px;
+  margin-top: 10px;
+}
+.promo_btns {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 220px;
+}
+.promo_link {
+  color: #000000;
+  font-weight: bold;
+}

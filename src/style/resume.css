@@ -1,0 +1,123 @@
+ul {
+  list-style: none;
+}
+ul li {
+  position: relative;
+}
+.resume_column ul li::after {
+  content: '';
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  top: -3px;
+  left: 0;
+  background-color: black;
+}
+.resume {
+  padding-top: 120px;
+  padding-left: 65px;
+}
+.resume_subtitle {
+  text-align: center;
+  position: relative;
+  font-size: 16px;
+}
+.resume_title {
+  position: relative;
+  text-align: center;
+  font-size: 36px;
+  line-height: 60px;
+}
+.resume_item-icon {
+  position: absolute;
+  left: 60px;
+  bottom: 14px;
+}
+.resume_item-head {
+  position: relative;
+  padding: 45px 0 0 100px;
+}
+.resume_desc {
+  padding: 12px 0 0 45px;
+}
+.icon_circle::before {
+  position: absolute;
+  content: '';
+  width: 36px;
+  height: 36px;
+  background-color: #ffa501;
+  border-radius: 100%;
+  z-index: -1;
+  top: -18px;
+  right: 0;
+}
+.resume_circle::before {
+  position: absolute;
+  content: '';
+  width: 36px;
+  height: 36px;
+  background-color: #ffa501;
+  border-radius: 100%;
+  z-index: -1;
+  top: -35%;
+  left: 50%;
+  transform: translate(-50%);
+}
+.divider {
+  margin: 25px auto 0 auto;
+  width: 60px;
+  height: 3px;
+  background-color: #ffa501;
+  margin-top: 25px;
+}
+.resume_wrapper {
+  padding: 60px 65px 0 65px;
+  display: grid;
+  grid-template-columns: repeat(2, 425px);
+  column-gap: 134px;
+}
+.resume_column {
+  position: relative;
+}
+.education {
+  font-size: 20px;
+  padding-left: 35px;
+}
+.education::before {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: #ffa501;
+  border-radius: 100%;
+  left: -7px;
+  top: 5px;
+}
+.experience {
+  font-size: 20px;
+  padding-left: 35px;
+}
+.experience::before {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: #ffa501;
+  border-radius: 100%;
+  left: -7px;
+  top: 5px;
+}
+.university-name {
+  font-size: 16px;
+}
+.resume_item {
+  position: relative;
+}
+.resume_item::before {
+  position: absolute;
+  content: '';
+  height: 1px;
+  width: 49px;
+  background-color: black;
+  top: 64px;
+}

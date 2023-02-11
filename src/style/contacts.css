@@ -1,0 +1,117 @@
+.contact_img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.contacts_desc .divider {
+  margin: 0;
+}
+.contacts {
+  padding: 120px 0 90px 0;
+}
+.contact {
+  position: relative;
+  margin-top: 6px;
+  padding-left: 12px;
+}
+.contact_title {
+  line-height: 60px;
+}
+.contact_circle::before {
+  position: absolute;
+  content: '';
+  width: 36px;
+  height: 36px;
+  background-color: #ffa501;
+  border-radius: 100%;
+  z-index: -1;
+  top: -5px;
+  left: 0;
+}
+
+.contact_desc {
+  font-weight: bold;
+  padding-top: 20px;
+}
+.contact_social {
+  padding-top: 20px;
+}
+.contact_social > a {
+  padding-right: 20px;
+}
+
+.contact_logo {
+  width: 30px;
+}
+.contacts_wrapper {
+  padding: 0 35px 0 52px;
+  display: grid;
+  grid-template-columns: 400px 585px;
+  justify-content: space-between;
+}
+.contact_form {
+  margin-top: 30px;
+  display: grid;
+  grid-template: 45px 190px 45px / repeat(2, 280px);
+  justify-content: space-between;
+  row-gap: 30px;
+}
+.contact_input {
+  position: relative;
+}
+.contact_input label {
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  display: block;
+  padding: 0 8px;
+  height: 18px;
+  z-index: 2;
+  left: 12px;
+  top: -25%;
+}
+
+.contact_input input {
+  width: 100%;
+  height: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 20px;
+}
+.contact_textarea {
+  position: relative;
+  grid-column: 1/3;
+}
+.contact_textarea label {
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  display: block;
+  padding: 0 8px;
+  height: 18px;
+  z-index: 2;
+  left: 12px;
+  top: -5%;
+}
+.contact_textarea textarea {
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  resize: none;
+}
+.contact_form .btn {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  width: 100%;
+}
+.contact_triggers {
+  grid-column: 1/3;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  column-gap: 35px;
+}
+.contact_policy {
+  display: flex;
+  align-items: center;
+}
+.contact_policy input {
+  margin-right: 10px;
+}
